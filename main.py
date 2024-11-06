@@ -3,12 +3,14 @@ import markdown2
 import pdfkit
 from PyPDF2 import PdfMerger
 
+path_wkhtmltopdf = "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe"
+config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
 
 def md_to_pdf(md_file, pdf_file):
     # convert md to HTML
     with open(md_file, 'r', encoding='utf-8') as f:
         html_content = markdown2.markdown(f.read())
-    pdfkit.from_string(html_content, pdf_file)  # save the HTML to a PDF
+    pdfkit.from_string(html_content, pdf_file, configuration=config)  # save the HTML to a PDF
 
 
 def convert_and_merge_md_files(folder_path, output_pdf):
@@ -41,5 +43,9 @@ def convert_and_merge_md_files(folder_path, output_pdf):
 
 def main():
     folder_path = 'C:/Users/user/Documents/Obsidian Vault/- Second Year/CSCI 243'  # replace with the path to your folder with .md files
-    output_pdf = 'C:/Users/user/Desktop/output/merged_output.pdf'  #  name of the output merged PDF
+    output_pdf = 'C:/Users/user/Desktop/output/merged_output.pdf'  # name of the output merged PDF
     convert_and_merge_md_files(folder_path, output_pdf)
+
+
+if __name__ == "__main__":
+    main()
