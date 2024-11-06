@@ -12,7 +12,7 @@ This Python script converts all Markdown (`.md`) files in a specified folder int
 
 - Python 3.x
 - Libraries:
-  - `markdown-pdf ` - for converting Markdown to PDF.
+  - `markdown-pdf` - for converting Markdown to PDF.
   - `PyPDF2` - for merging PDF files.
 
 
