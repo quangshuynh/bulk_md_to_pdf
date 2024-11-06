@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 1in;
+}
+
+/* Markdown Headers */
+h1 {
+    font-size: 32px;
+    color: #2A7FFF;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+h2 {
+    font-size: 28px;
+    color: #2A5FFF;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+h3 {
+    font-size: 24px;
+    color: #2A3FFF;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+h4 {
+    font-size: 20px;
+    color: #2A1FFF;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+h5 {
+    font-size: 18px;
+    color: #1A1FFF;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+h6 {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+/* Paragraphs */
+p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Bold and Italic */
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+
+/* Inline Code */
+code {
+    font-family: monospace;
+    background-color: #f5f5f5;
+    color: #c7254e;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Code Blocks */
+pre {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #333;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Lists */
+ul, ol {
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 15px;
+    color: #555;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
